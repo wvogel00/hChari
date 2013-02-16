@@ -1,6 +1,6 @@
 module Types where
 
-import Graphics.FreeGame.Simple (Vec2)
+import Graphics.FreeGame.Base
 
 type Field = [Int]
 
@@ -21,3 +21,5 @@ data GameInfo = GameInfo{
     }
 
 settingFile = "setting.chr"
+
+hChariGameParam = GameParam 60 (winW,winH) "hChari" True True (Color 255 255 255 0) (Vec2 0 0)

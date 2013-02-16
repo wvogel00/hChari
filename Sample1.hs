@@ -2,9 +2,10 @@
 
 import Graphics.FreeGame.Simple
 import Control.Monad
+import Types
 
 main = do
-    bmp <- loadBitmapFromFile "HaskellLogoStyPreview-1.png"
+    bmp <- loadBitmapFromFile "images/HaskellLogoStyPreview-1.png"
     let ?bmp = bmp
     runSimple defaultGameParam (240,80) mainLoop
 
